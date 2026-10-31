@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.npm-cache/
+cdk.out/
+*.log
+.DS_Store
+# デモが生成する作業ディレクトリ
+demos/
+.tmp/
+.dencho*/
+.dencho-demo/
+reports/
+examples/**/out/

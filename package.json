@@ -1,0 +1,67 @@
+{
+  "name": "dencho-archive",
+  "version": "0.1.0",
+  "description": "電子帳簿保存法（電帳法）対応の証憑アーカイブ基盤 — WORM / ハッシュチェーン / 検索要件 / 適合性検証",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "bin": {
+    "dencho": "./dist/cli/main.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "synth": "node dist/cdk/synth-cli.js",
+    "cdk": "npm run build && node dist/cdk/app.js",
+    "demo": "node dist/cli/main.js demo",
+    "audit": "node dist/cli/main.js audit",
+    "verify": "node dist/cli/main.js verify",
+    "prepare": "npm run build",
+    "pretest": "npm run build",
+    "demo:keep": "node dist/cli/main.js demo --keep",
+    "audit:sample": "node dist/cli/main.js init --dir .dencho-sample && node dist/cli/main.js ingest --dir .dencho-sample --bulk examples/inbox/manifest.json && node dist/cli/main.js audit --dir .dencho-sample --infra auto"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1161.0",
+    "@aws-sdk/client-s3": "^3.1161.0",
+    "@aws-sdk/lib-dynamodb": "^3.1161.0",
+    "aws-cdk-lib": "^2.275.0",
+    "constructs": "^10.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "aws-cdk": "^2.1147.0",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "keywords": [
+    "japan",
+    "densho",
+    "dencho",
+    "electronic-bookkeeping",
+    "aws",
+    "cdk",
+    "serverless",
+    "compliance",
+    "worm",
+    "s3-object-lock"
+  ]
+}

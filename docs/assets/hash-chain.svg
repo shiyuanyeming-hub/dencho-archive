@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="560" viewBox="0 0 1180 560" font-family="Hiragino Sans, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker></defs>
+<rect width="1180" height="560" fill="#ffffff"/>
+<rect x="36.0" y="116.0" width="268.0" height="78.0" rx="10" fill="#e9f7ee" opacity="1.0" stroke="#1a7f37" stroke-width="1.2"/>
+<line x1="308.0" y1="155.0" x2="334.0" y2="155.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="338.0" y="116.0" width="268.0" height="78.0" rx="10" fill="#e9f7ee" opacity="1.0" stroke="#1a7f37" stroke-width="1.2"/>
+<line x1="610.0" y1="155.0" x2="636.0" y2="155.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="640.0" y="116.0" width="268.0" height="78.0" rx="10" fill="#e9f7ee" opacity="1.0" stroke="#1a7f37" stroke-width="1.2"/>
+<rect x="36.0" y="264.0" width="268.0" height="78.0" rx="10" fill="#e9f7ee" opacity="1.0" stroke="#1a7f37" stroke-width="1.2"/>
+<line x1="308.0" y1="303.0" x2="334.0" y2="303.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="338.0" y="264.0" width="268.0" height="78.0" rx="10" fill="#ffebe9" opacity="1.0" stroke="#cf222e" stroke-width="1.2"/>
+<line x1="610.0" y1="303.0" x2="636.0" y2="303.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="640.0" y="264.0" width="268.0" height="78.0" rx="10" fill="#ffebe9" opacity="1.0" stroke="#cf222e" stroke-width="1.2"/>
+<rect x="36.0" y="372.0" width="1108.0" height="104.0" rx="10" fill="#ffebe9" opacity="1.0" stroke="#cf222e" stroke-width="1.2"/>
+<text x="36.0" y="44.0" font-size="22" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">ハッシュチェーンによる改ざん検知</text>
+<text x="404.0" y="44.0" font-size="14" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">— 1 件の変更でも、以降のハッシュがすべて食い違う</text>
+<text x="36.0" y="96.0" font-size="15" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">正常な状態</text>
+<text x="52.0" y="142.0" font-size="15" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">第 1 項</text>
+<text x="52.0" y="166.0" font-size="12" fill="#1f2328" font-family="Menlo, monospace" text-anchor="start" xml:space="preserve">h1 = H(data1, prev=0…0)</text>
+<text x="52.0" y="184.0" font-size="11" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">✓ 再計算値と一致</text>
+<text x="354.0" y="142.0" font-size="15" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">第 2 項</text>
+<text x="354.0" y="166.0" font-size="12" fill="#1f2328" font-family="Menlo, monospace" text-anchor="start" xml:space="preserve">h2 = H(data2, prev=h1)</text>
+<text x="354.0" y="184.0" font-size="11" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">✓ 再計算値と一致</text>
+<text x="656.0" y="142.0" font-size="15" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">第 3 項</text>
+<text x="656.0" y="166.0" font-size="12" fill="#1f2328" font-family="Menlo, monospace" text-anchor="start" xml:space="preserve">h3 = H(data3, prev=h2)</text>
+<text x="656.0" y="184.0" font-size="11" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">✓ 再計算値と一致</text>
+<text x="36.0" y="244.0" font-size="15" fill="#cf222e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">第 2 項の保存データを 1 バイト改ざんした場合</text>
+<text x="52.0" y="290.0" font-size="15" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">第 1 項</text>
+<text x="52.0" y="314.0" font-size="12" fill="#1f2328" font-family="Menlo, monospace" text-anchor="start" xml:space="preserve">h = h1（一致）</text>
+<text x="52.0" y="332.0" font-size="11" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">✓ 一致</text>
+<text x="354.0" y="290.0" font-size="15" fill="#cf222e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">第 2 項</text>
+<text x="354.0" y="314.0" font-size="12" fill="#cf222e" font-family="Menlo, monospace" text-anchor="start" xml:space="preserve">h2' ≠ H(data2', prev=h1)</text>
+<text x="354.0" y="332.0" font-size="11" fill="#cf222e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">✗ 不一致を検出</text>
+<text x="656.0" y="290.0" font-size="15" fill="#cf222e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">第 3 項</text>
+<text x="656.0" y="314.0" font-size="12" fill="#cf222e" font-family="Menlo, monospace" text-anchor="start" xml:space="preserve">h3' ≠ H(data3, prev=h2)</text>
+<text x="656.0" y="332.0" font-size="11" fill="#cf222e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">✗ 不一致を検出</text>
+<text x="50.0" y="396.0" font-size="15" fill="#cf222e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">検証結果（verify コマンドの出力）</text>
+<text x="50.0" y="418.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">状態: broken / 検出位置: 第 2 項（該当する証憑ID）</text>
+<text x="50.0" y="436.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">理由: content-mismatch</text>
+<text x="50.0" y="454.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">期待: 3f9a…（保存時のハッシュ）    実際: 8c21…（再計算したハッシュ）</text>
+<text x="36.0" y="512.0" font-size="13" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">改ざんを検知できるだけでなく、どの証憑のどの位置で壊れたかを特定できる。</text>
+<text x="36.0" y="534.0" font-size="13" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">S3 Object Lock（WORM）は改ざん自体を拒否し、ハッシュチェーンは万一の破損・内部犯行を事後検知する。</text>
+</svg>

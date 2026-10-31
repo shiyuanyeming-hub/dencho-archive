@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: 型検査・テスト・ビルド（Node ${{ matrix.node-version }}）
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: ['20', '22']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: 依存をインストール
+        run: npm ci
+
+      - name: 型検査（strict + noUncheckedIndexedAccess）
+        run: npm run typecheck
+
+      - name: テスト（pretest でビルドも走る）
+        run: npm test
+
+      - name: CLI の起動確認
+        run: |
+          node dist/cli/main.js --version
+          node dist/cli/main.js capability
+
+      - name: CloudFormation の合成（AWS 資格情報なしで動くこと）
+        run: |
+          node dist/cdk/synth-cli.js > /tmp/templates.json
+          node -e "
+            const t = require('/tmp/templates.json');
+            const stacks = Object.keys(t.stacks);
+            if (stacks.length < 3) throw new Error('スタックが不足しています: ' + stacks.join(','));
+            const json = JSON.stringify(t);
+            if (!json.includes('2557')) throw new Error('Object Lock の保存期間 2557 日が見つかりません');
+            if (!json.includes('COMPLIANCE')) throw new Error('COMPLIANCE モードが見つかりません');
+            console.log('スタック:', stacks.join(', '));
+          "
+
+      - name: デモ（取り込み→検索→改ざん検知→監査）
+        run: node dist/cli/main.js demo
+
+  audit-demo:
+    name: 適合性監査のデモ
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: サンプル証憑を取り込む
+        run: |
+          node dist/cli/main.js init --dir /tmp/archive
+          node dist/cli/main.js ingest --dir /tmp/archive --bulk examples/inbox/manifest.json
+
+      - name: 検索要件を確認
+        run: node dist/cli/main.js capability --json | tee /tmp/capability.json
+
+      - name: チェーン検証
+        run: node dist/cli/main.js verify --dir /tmp/archive --json
+
+      - name: 適合性監査（インフラは合成結果を使用）
+        run: |
+          node dist/cli/main.js audit --dir /tmp/archive --infra auto --format markdown --out reports/audit.md
+          echo "--- 監査結果 ---"
+          head -40 reports/audit.md
+
+      - name: レポートを保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report
+          path: reports/

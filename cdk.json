@@ -1,0 +1,9 @@
+{
+  "app": "node dist/cdk/app.js",
+  "output": "cdk.out",
+  "versionReporting": false,
+  "requireApproval": "never",
+  "context": {
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true
+  }
+}

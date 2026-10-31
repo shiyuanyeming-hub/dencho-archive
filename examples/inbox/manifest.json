@@ -1,0 +1,79 @@
+{
+  "baseDir": ".",
+  "vouchers": [
+    {
+      "file": "invoice-2026-04-15.txt",
+      "voucherId": "INV-2026-0415-001",
+      "transactionDate": "2026-04-15",
+      "amountYen": 330000,
+      "counterparty": {
+        "name": "株式会社サンプル商事",
+        "invoiceRegistrationNumber": "T1234567890123"
+      },
+      "documentType": "invoice",
+      "mediaType": "text/plain",
+      "tags": [
+        "開発"
+      ],
+      "note": "4月分の開発支援"
+    },
+    {
+      "file": "receipt-2026-05-02.txt",
+      "voucherId": "RCP-2026-0502-014",
+      "transactionDate": "2026-05-02",
+      "amountYen": 8800,
+      "counterparty": {
+        "name": "有限会社テスト工業"
+      },
+      "documentType": "receipt",
+      "mediaType": "text/plain",
+      "tags": [
+        "消耗品"
+      ]
+    },
+    {
+      "file": "invoice-2026-06-11.txt",
+      "voucherId": "INV-2026-0611-007",
+      "transactionDate": "2026-06-11",
+      "amountYen": 275000,
+      "counterparty": {
+        "name": "サンプル商事(株)"
+      },
+      "documentType": "invoice",
+      "mediaType": "text/plain",
+      "tags": [
+        "保守"
+      ]
+    },
+    {
+      "file": "delivery-2026-06-20.txt",
+      "voucherId": "DN-2026-0620-003",
+      "transactionDate": "2026-06-20",
+      "amountYen": 1250000,
+      "counterparty": {
+        "name": "株式会社デモ電機",
+        "invoiceRegistrationNumber": "T9876543210987"
+      },
+      "documentType": "delivery-note",
+      "mediaType": "text/plain",
+      "tags": [
+        "設備"
+      ]
+    },
+    {
+      "file": "contract-2026-07-01.txt",
+      "voucherId": "CTR-2026-0701-002",
+      "transactionDate": "2026-07-01",
+      "amountYen": 500000,
+      "counterparty": {
+        "name": "合同会社クラウドデモ",
+        "invoiceRegistrationNumber": "T1111222233334"
+      },
+      "documentType": "contract",
+      "mediaType": "text/plain",
+      "tags": [
+        "委託"
+      ]
+    }
+  ]
+}

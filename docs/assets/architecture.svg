@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="800" viewBox="0 0 1240 800" font-family="Hiragino Sans, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker></defs>
+<rect width="1240" height="800" fill="#ffffff"/>
+<rect x="36.0" y="76.0" width="250.0" height="92.0" rx="10" fill="#f6f8fa" opacity="1.0" stroke="#59636e" stroke-width="1.2"/>
+<rect x="36.0" y="190.0" width="250.0" height="122.0" rx="10" fill="#f4eeff" opacity="1.0" stroke="#8250df" stroke-width="1.2"/>
+<rect x="330.0" y="88.0" width="300.0" height="44.0" rx="8" fill="#fff3e8" opacity="1.0" stroke="#c7511f" stroke-width="1.2"/>
+<rect x="330.0" y="140.0" width="300.0" height="44.0" rx="8" fill="#fff3e8" opacity="1.0" stroke="#c7511f" stroke-width="1.2"/>
+<rect x="330.0" y="192.0" width="300.0" height="44.0" rx="8" fill="#fff3e8" opacity="1.0" stroke="#c7511f" stroke-width="1.2"/>
+<rect x="330.0" y="244.0" width="300.0" height="44.0" rx="8" fill="#fff3e8" opacity="1.0" stroke="#c7511f" stroke-width="1.2"/>
+<rect x="700.0" y="76.0" width="300.0" height="118.0" rx="10" fill="#e8f1ff" opacity="1.0" stroke="#0969da" stroke-width="1.2"/>
+<rect x="700.0" y="208.0" width="300.0" height="124.0" rx="10" fill="#e8f1ff" opacity="1.0" stroke="#0969da" stroke-width="1.2"/>
+<rect x="700.0" y="346.0" width="300.0" height="76.0" rx="10" fill="#e8f1ff" opacity="1.0" stroke="#0969da" stroke-width="1.2"/>
+<rect x="36.0" y="340.0" width="594.0" height="200.0" rx="10" fill="#e9f7ee" opacity="1.0" stroke="#1a7f37" stroke-width="1.2"/>
+<rect x="330.0" y="570.0" width="670.0" height="104.0" rx="10" fill="#f4eeff" opacity="1.0" stroke="#8250df" stroke-width="1.2"/>
+<rect x="1030.0" y="570.0" width="174.0" height="104.0" rx="10" fill="#f4eeff" opacity="1.0" stroke="#8250df" stroke-width="1.2"/>
+<line x1="286.0" y1="122.0" x2="326.0" y2="122.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="281.5" y="113.0" width="49.0" height="18" rx="4" fill="#ffffff"/>
+<line x1="630.0" y1="106.0" x2="696.0" y2="116.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="647.0" y="102.0" width="32.0" height="18" rx="4" fill="#ffffff"/>
+<line x1="630.0" y1="150.0" x2="696.0" y2="254.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="647.0" y="193.0" width="32.0" height="18" rx="4" fill="#ffffff"/>
+<line x1="850.0" y1="346.0" x2="850.0" y2="334.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="850.0" y1="422.0" x2="850.0" y2="566.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="834.0" y="485.0" width="32.0" height="18" rx="4" fill="#ffffff"/>
+<line x1="1000.0" y1="622.0" x2="1026.0" y2="622.0" stroke="#59636e" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="36.0" y="42.0" font-size="22" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">電帳法対応 証憑アーカイブの構成</text>
+<text x="389.0" y="42.0" font-size="14" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">— サーバーレス / イミュータブル / 検証可能</text>
+<text x="50.0" y="100.0" font-size="15" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">利用者・経理システム</text>
+<text x="50.0" y="122.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">経理担当者の取り込み</text>
+<text x="50.0" y="140.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">税務調査対応者の検索・DL</text>
+<text x="50.0" y="214.0" font-size="15" fill="#8250df" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">ローカル実行（AWS なし）</text>
+<text x="50.0" y="236.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">ファイルアダプタ + CLI</text>
+<text x="50.0" y="254.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">demo / CI で E2E を実行</text>
+<text x="50.0" y="272.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">同じ Archive インタフェース</text>
+<text x="330.0" y="66.0" font-size="12" fill="#c7511f" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">AWS Lambda（ポート &amp; アダプタでローカルと同じコード）</text>
+<text x="344.0" y="115.0" font-size="14" fill="#c7511f" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">ingest</text>
+<text x="416.0" y="114.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">検証 → ハッシュ → 保存 → 台帳追記</text>
+<text x="344.0" y="167.0" font-size="14" fill="#c7511f" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">search</text>
+<text x="416.0" y="166.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">検索要件の 3 項目で検索</text>
+<text x="344.0" y="219.0" font-size="14" fill="#c7511f" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">export</text>
+<text x="416.0" y="218.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">CSV / JSON（ダウンロードの求め）</text>
+<text x="344.0" y="271.0" font-size="14" fill="#c7511f" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">verify</text>
+<text x="416.0" y="270.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">日次でチェーン全体を再検証</text>
+<text x="714.0" y="100.0" font-size="15" fill="#0969da" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">S3（Object Lock / WORM）</text>
+<text x="714.0" y="122.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">保持モード: COMPLIANCE</text>
+<text x="714.0" y="140.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">保持期間: 2,557 日（7 年）</text>
+<text x="714.0" y="158.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">暗号化: KMS / TLS 必須</text>
+<text x="714.0" y="176.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">本体とメタデータを内容アドレスで保存</text>
+<text x="714.0" y="232.0" font-size="15" fill="#0969da" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">DynamoDB（台帳と索引）</text>
+<text x="714.0" y="254.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">台帳: 追記専用のハッシュチェーン</text>
+<text x="714.0" y="272.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">追記はトランザクションで排他制御</text>
+<text x="714.0" y="290.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">索引: 日付・金額・取引先 + 複合 2 種</text>
+<text x="714.0" y="308.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">PITR / 暗号化</text>
+<text x="714.0" y="370.0" font-size="15" fill="#0969da" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">KMS</text>
+<text x="714.0" y="392.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">CMK（キーローテーション有効）</text>
+<text x="714.0" y="410.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">保存データと監査ログを暗号化</text>
+<text x="50.0" y="366.0" font-size="15" fill="#1a7f37" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">ガードレール</text>
+<text x="50.0" y="392.0" font-size="13" fill="#1a7f37" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">CloudTrail</text>
+<text x="168.0" y="392.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">S3 データイベントを記録し、操作の証跡を残す</text>
+<text x="50.0" y="426.0" font-size="13" fill="#1a7f37" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">EventBridge</text>
+<text x="168.0" y="426.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">日次スケジュールで verify を自動実行する</text>
+<text x="50.0" y="460.0" font-size="13" fill="#1a7f37" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">CloudWatch</text>
+<text x="168.0" y="460.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">チェーン破損をアラームで通知する</text>
+<text x="50.0" y="494.0" font-size="13" fill="#1a7f37" font-family="Menlo, monospace" font-weight="600" text-anchor="start" xml:space="preserve">Step Functions</text>
+<text x="168.0" y="494.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">一括取り込み（Map + 再試行 + 失敗経路）</text>
+<text x="344.0" y="594.0" font-size="15" fill="#8250df" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">適合性検証エンジン（このリポジトリの中心）</text>
+<text x="344.0" y="616.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">電帳法の要件をルール化し、アーカイブの状態と CDK が合成したインフラ定義を機械検証する。</text>
+<text x="344.0" y="634.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">真実性 / 可視性 / 検索要件 / 保存期間 / 税務調査対応 / 監査証跡の 6 区分・20 ルール。</text>
+<text x="344.0" y="652.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">判定は pass / fail / n/a を根拠（証跡）付きで返し、総合判定と終了コードを決める。</text>
+<text x="1044.0" y="594.0" font-size="15" fill="#8250df" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" font-weight="600" text-anchor="start" xml:space="preserve">監査レポート</text>
+<text x="1044.0" y="616.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">Markdown / JSON</text>
+<text x="1044.0" y="634.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">CI で毎回実行</text>
+<text x="1044.0" y="652.0" font-size="12" fill="#1f2328" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">不適合なら exit 1</text>
+<text x="306.0" y="126.0" font-size="12" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="middle" xml:space="preserve">HTTPS</text>
+<text x="663.0" y="115.0" font-size="12" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="middle" xml:space="preserve">保存</text>
+<text x="663.0" y="206.0" font-size="12" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="middle" xml:space="preserve">追記</text>
+<text x="850.0" y="498.0" font-size="12" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="middle" xml:space="preserve">監査</text>
+<text x="36.0" y="714.0" font-size="13" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">同じアプリケーションコードが、ローカルのファイルアダプタでも AWS アダプタでも動く（ポート &amp; アダプタ）。</text>
+<text x="36.0" y="740.0" font-size="13" fill="#59636e" font-family="Hiragino Sans, Hiragino Kaku Gothic Pro, sans-serif" text-anchor="start" xml:space="preserve">そのため CI では AWS 資格情報なしで、取り込み → 検索 → 改ざん検知 → 適合性監査までを実際に実行して検証している。</text>
+</svg>
